@@ -1,0 +1,21 @@
+#cloud-config 
+autoinstall:
+    version: 1
+    identity:
+        realname: 'IPOG'
+        hostname: ubuntu-ipog
+        username: IPOG
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Sao_Paulo"   
+    packages:
+        - libreoffice
+        - git
+        - wget
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
