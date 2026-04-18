@@ -4,7 +4,17 @@ autoinstall:
     identity:
         realname: 'IPOG'
         hostname: ubuntu-ipog
-        username: IPOG
+        username: ipog
+        password: "$6$rounds=4096$example_salt$example_hashed_password"
+    user-data:
+        package_upgrade: true
+        users:
+            - name: Aluno
+              gecos: Aluno
+              groups: []
+              shell: /bin/bash
+              lock_password: true
+              sudo: ['ALL=(ALL) NOPASSWD:ALL']
     locale: pt_BR.utf8
     keyboard:
         layout: br
@@ -13,9 +23,13 @@ autoinstall:
         - libreoffice
         - git
         - wget
-    codecs:
-        install: true
-    drivers:
-        install: true
+        - curl
+        - build-essential
+        - net-tools
+        - vim
+        - unzip
+        - ubuntu-restricted-extras
+        - ubuntu-drivers-common
     updates: all
-    shutdown: reboot
+    shutdown:
+        reboot: true
