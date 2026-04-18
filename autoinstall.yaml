@@ -5,7 +5,7 @@ autoinstall:
         realname: 'IPOG'
         hostname: ubuntu-ipog
         username: ipog
-        password: "$6$rounds=4096$example_salt$example_hashed_password"
+        password: "$6$KOXLr8o1HKOQTYo.$.FwCPR9FytDFx/RKNyDAbQi5/fPZOGNV0Iggy/.ncrGKCqsdDyW6G0KGx43/u1ettTStsw5v2kTQAWVpxAOSW1"
     user-data:
         package_upgrade: true
         users:
