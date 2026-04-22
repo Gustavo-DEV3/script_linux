@@ -19,7 +19,5 @@ autoinstall:
         - net-tools
         - vim
         - unzip
-        - ubuntu-restricted-extras
-        - ubuntu-drivers-common
     updates: all
     shutdown: reboot
