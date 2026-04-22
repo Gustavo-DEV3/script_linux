@@ -22,5 +22,4 @@ autoinstall:
         - ubuntu-restricted-extras
         - ubuntu-drivers-common
     updates: all
-    shutdown:
-        reboot: true
+    shutdown: reboot
